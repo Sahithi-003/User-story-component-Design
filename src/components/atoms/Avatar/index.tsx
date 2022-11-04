@@ -6,7 +6,6 @@ interface AvatarProps{
   
   const Avatar = (props:AvatarProps) => {
     const { src } = props;
-  
     return (
       <div>
         <Avatar  src={src} />

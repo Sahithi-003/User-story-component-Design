@@ -4,6 +4,7 @@ import Icon from '../../atoms/Icon'
 import Typography from '../../atoms/Typography'
 
 function PaymentCard() {
+    
   return (
     <Grid container direction="column">
         <Grid item>

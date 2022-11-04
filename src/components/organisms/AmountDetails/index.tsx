@@ -8,6 +8,7 @@ interface AmountDetailsProps {
 
 function index(props: AmountDetailsProps) {
     const {amount} = props
+    
   return (
     <div>
         <Typography children="Amount details"/>

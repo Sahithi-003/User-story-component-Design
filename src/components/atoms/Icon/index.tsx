@@ -6,8 +6,7 @@ interface IconProps{
   }
   
   const Icon = (props: IconProps) => {
-    const { icon } = props;
-  
+    const { icon } = props; 
     return (
       <div>
        <img src={icon} alt="icon" />;

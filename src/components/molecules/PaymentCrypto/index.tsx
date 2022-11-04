@@ -4,6 +4,7 @@ import Icon from '../../atoms/Icon'
 import Typography from '../../atoms/Typography'
 
 function PaymentCrypto() {
+    
   return (
     <>
         <Grid item>

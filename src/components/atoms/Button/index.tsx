@@ -8,7 +8,6 @@ import {
     variant : string;
     children : string;
   }
-  
   const Button = (props: ButtonProps) => {
     const { variant, children, onclick } = props;
     return (

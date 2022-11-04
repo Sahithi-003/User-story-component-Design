@@ -6,6 +6,7 @@ interface ChipProps {
 }
 
 export default function Chips({label}: ChipProps) {
+  
   return (
     <div>
         <Chip label={label}/>

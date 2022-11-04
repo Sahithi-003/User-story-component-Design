@@ -3,6 +3,7 @@ import { Grid } from "@mui/material";
 import Chips from '../../atoms/chips'
 
 function index() {
+    
   return (
     <Grid container direction="row">
         <Grid item>

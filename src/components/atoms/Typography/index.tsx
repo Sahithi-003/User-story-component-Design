@@ -6,6 +6,7 @@ interface TypographyProps {
   }
 
 function Typography({variant, children}: TypographyProps) {
+    
   return (
     <div>
     <Typography variant={variant}>

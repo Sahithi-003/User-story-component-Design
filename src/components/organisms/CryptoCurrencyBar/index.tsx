@@ -3,6 +3,7 @@ import { Grid } from "@mui/material";
 import Typography from "../../atoms/Typography";
 
 function CryptoCurrencyBar() {
+    
   return (
     <div>
         <Grid container direction="row">
