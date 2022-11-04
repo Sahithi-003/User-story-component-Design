@@ -1,9 +1,17 @@
 import React from 'react'
 
-function index() {
+interface AvatarProps{
+  src: string;
+}
+
+const Avatar = (props:AvatarProps) => {
+  const { src } = props;
+
   return (
-    <div>index</div>
+    <div>
+      <Avatar  src={src} />
+    </div>
   )
 }
 
-export default index
+export default Avatar
