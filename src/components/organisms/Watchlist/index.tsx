@@ -1,8 +1,18 @@
 import React from 'react'
+import { Grid } from "@mui/material";
 
 function index() {
   return (
-    <div>index</div>
+    <>
+      <Grid container direction="row">
+        <Grid item>
+          <Grid container direction="column">
+            <Grid item>Details</Grid>
+            <Grid item>Graph</Grid>
+          </Grid>
+        </Grid>
+      </Grid>
+    </>
   )
 }
 

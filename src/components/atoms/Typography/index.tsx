@@ -1,9 +1,18 @@
 import React from 'react'
 
-function index() {
+interface TypographyProps {
+    variant : string;
+    children : string;
+  }
+
+function Typography({variant, children}: TypographyProps) {
   return (
-    <div>index</div>
+    <div>
+    <Typography variant={variant}>
+      {children}
+    </Typography>
+    </div>
   )
 }
 
-export default index
+export default Typography

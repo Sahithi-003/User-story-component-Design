@@ -1,8 +1,18 @@
 import React from 'react'
+import Button from '../../atoms/Button'
+import Typography from '../../atoms/Typography'
 
-function index() {
+interface IconButtonProps{
+    ButtonChildren: string;
+    TypoVariant: string;
+}
+
+function index(props: IconButtonProps) {
   return (
-    <div>index</div>
+    <div>
+        <Button  variant={'outlined'} children={'Button'}/>
+        <Typography variant={'typo'} children={''}/>
+    </div>
   )
 }
 

@@ -1,9 +1,18 @@
 import React from 'react'
+import { Grid } from "@mui/material";
+import PaymentCrypto from '../../molecules/PaymentCrypto'
 
-function index() {
+function WatchlistBar() {
   return (
-    <div>index</div>
+    <Grid container direction="row">
+    <Grid item>
+      <PaymentCrypto/>
+    </Grid>
+    <Grid item>
+    <PaymentCrypto/>
+    </Grid>
+  </Grid>
   )
 }
 
-export default index
+export default WatchlistBar
