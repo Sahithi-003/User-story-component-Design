@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Icon from '../../atoms/Icon'
 import Tab from "@mui/material/Tab";
 import TabContext from "@mui/lab/TabContext";
@@ -7,10 +7,13 @@ import TabPanel from "@mui/lab/TabPanel";
 import { Box } from '@mui/material';
 
 function ReccurringTab() {
-    
+const [value, setValue] = useState<string>("0");
+    useEffect(()=>{
+        setValue("1");
+    });
   return (
     <>
-        <TabContext value={''} >
+        <TabContext value={value} >
             <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
             <TabList aria-label="lab API tabs example">
                 <Icon icon={'reload'}/>

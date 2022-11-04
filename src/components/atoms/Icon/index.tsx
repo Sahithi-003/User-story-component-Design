@@ -1,5 +1,4 @@
 import React from 'react'
-import MuiIcon from '@mui/material/Icon';
 
 interface IconProps{
     icon: string;

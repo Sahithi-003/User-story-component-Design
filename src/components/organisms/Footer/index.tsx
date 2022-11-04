@@ -4,6 +4,7 @@ import Button from "../../atoms/Button";
 import Typography from "../../atoms/Typography";
 
 function Footer() {
+    const handleClick = () => {};
   return (
     <div>
         <Grid container direction="row">
@@ -20,7 +21,7 @@ function Footer() {
           <Typography children="2021 Minet" variant="h3" />
         </Grid>
         <Grid item>
-          <Button children="Need Help" variant="outlined" onclick={() => {}} />
+          <Button children="Need Help" variant="outlined"  onclick={handleClick} />
         </Grid>
       </Grid>
     </div>

@@ -8,7 +8,7 @@ interface AmountDetailsProps {
 
 function index(props: AmountDetailsProps) {
     const {amount} = props
-    
+    const handleClick = () => {};
   return (
     <div>
         <Typography children="Amount details"/>
@@ -17,7 +17,7 @@ function index(props: AmountDetailsProps) {
             <Typography  children={amount}/>
             </Grid>
             <Grid item>
-            <Button children="Buy max" variant='outlined' onclick={ () => {} } />
+            <Button children="Buy max" variant='outlined' onclick={handleClick} />
             </Grid>
         </Grid>
     </div>

@@ -8,10 +8,10 @@ interface IconButtonProps{
 }
 
 function index(props: IconButtonProps) {
-    
+      const handleChange = () => {};
   return (
     <div>
-        <Button  variant={'outlined'} children={'Button'}/>
+        <Button  variant={'outlined'} children={'Button'} onclick={handleChange}/>
         <Typography variant={'typo'} children={''}/>
     </div>
   )

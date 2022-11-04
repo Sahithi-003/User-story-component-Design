@@ -8,6 +8,7 @@ interface BuyCryptoProps {
   }
 
 function index({buyingAmount}: BuyCryptoProps) {
+    const handleClick = () => {};
   return (
     <Grid container>
     <Grid item>
@@ -26,7 +27,7 @@ function index({buyingAmount}: BuyCryptoProps) {
 
     <Grid item></Grid>
     <Grid item>
-      <Button children="Buy Now" variant="contained" onclick={() => {}} />
+      <Button children="Buy Now" variant="contained" onclick={handleClick} />
     </Grid>
   </Grid>
   )
