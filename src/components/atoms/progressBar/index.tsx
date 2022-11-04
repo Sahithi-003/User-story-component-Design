@@ -1,9 +1,23 @@
 import React from 'react'
+import LinearProgress from '@mui/material/LinearProgress';
+import { styled } from '@mui/material/styles';
 
-function index() {
+interface ProgressBarProps{
+  value: number;
+}
+const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
+  height: 10,
+  borderRadius: 5,
+}));
+
+const ProgressBar = (props: ProgressBarProps) => {
+  const { value } = props;
+
   return (
-    <div>index</div>
+    <div>
+      <BorderLinearProgress variant="determinate" value={value} />
+    </div>
   )
 }
 
-export default index
+export default ProgressBar

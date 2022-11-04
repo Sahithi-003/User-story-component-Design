@@ -1,9 +1,9 @@
 import React from 'react'
 
-function index() {
+function Explore() {
   return (
-    <div>index</div>
+    <div>ExploreMenu</div>
   )
 }
 
-export default index
+export default Explore

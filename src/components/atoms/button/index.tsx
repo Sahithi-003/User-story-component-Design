@@ -1,9 +1,29 @@
 import React from 'react'
+import {
+  Button as MuiButton,
+  Typography,
+} from "@mui/material";
 
-function index() {
+interface ButtonProps {
+  variant: "contained" | "text" | "outlined";
+  label: string;
+  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+  styles?: React.CSSProperties | null;
+}
+
+const Button = (props: ButtonProps) => {
+  const { variant, label, onClick, styles } = props;
   return (
-    <div>index</div>
+    <div>
+      <MuiButton
+        variant={variant}
+        onClick={onClick}
+        sx={styles}
+      >
+        <Typography >{label}</Typography>
+      </MuiButton>
+    </div>
   )
 }
 
-export default index
+export default Button

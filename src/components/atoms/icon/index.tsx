@@ -1,9 +1,18 @@
 import React from 'react'
+import MuiIcon from '@mui/material/Icon';
 
-function index() {
+interface IconProps{
+  icon: string;
+}
+
+const Icon = (props: IconProps) => {
+  const { icon } = props;
+
   return (
-    <div>index</div>
+    <div>
+      <MuiIcon>{icon}</MuiIcon>;
+    </div>
   )
 }
 
-export default index
+export default Icon

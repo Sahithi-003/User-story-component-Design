@@ -1,9 +1,15 @@
 import React from 'react'
+import { TextField } from '@mui/material'
 
-function index() {
+const Searchbar = () => {
+  const handleChange = () => {
+
+  }
   return (
-    <div>index</div>
+    <div>
+      <TextField placeholder={""} onChange={handleChange}/>
+    </div>
   )
 }
 
-export default index
+export default Searchbar
